@@ -11,6 +11,7 @@ void MotorUtils::Motor(int Index,int Direction,int Speed)
 void MotorUtils::SpinMotor(int Index, int Speed)
 {
     int Direction;
+    
     if(Speed < 0)
     {
         Direction = BACKWARD;
@@ -19,15 +20,13 @@ void MotorUtils::SpinMotor(int Index, int Speed)
     {
         Direction = FORWARD;
     }
-    else
+    else if(Speed == 0)
     {
         Direction = BRAKE;
     }
 
     Motors.motor(Index, Direction, Speed);
 }
-
-
 
 void MotorUtils::StopMotor(int Index)
 {

@@ -47,6 +47,7 @@ void loop()
     Utils::Print(Sound);
 
 
+
     if(Sound < SilentVolumeThreshold && IsTalking)
     {
         if(millis() > BassMovement::MouthThen)

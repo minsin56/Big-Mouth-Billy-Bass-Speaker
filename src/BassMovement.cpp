@@ -9,7 +9,6 @@ void BassMovement::OpenMouth()
     MotorUtils::ReleaseMotor(MouthMotorPin);
     MotorUtils::SpinMotor(MouthMotorPin,255);
     delay(1);
-    MotorUtils::SpinMotor(MouthMotorPin,0);
 }
 
 void BassMovement::CloseMouth()
@@ -17,7 +16,6 @@ void BassMovement::CloseMouth()
     MotorUtils::ReleaseMotor(MouthMotorPin);
     MotorUtils::SpinMotor(MouthMotorPin,-255);
     delay(1);
-    MotorUtils::SpinMotor(MouthMotorPin,0);
 }
 
 void BassMovement::FlapTail(int Times,int Duration)

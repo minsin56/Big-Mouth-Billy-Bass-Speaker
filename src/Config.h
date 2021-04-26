@@ -1,2 +1,2 @@
 #define Debug true
-#define SilentVolumeThreshold 1000
+#define SilentVolumeThreshold 255
